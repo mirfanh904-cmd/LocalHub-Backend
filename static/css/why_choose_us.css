@@ -1,0 +1,373 @@
+/* =====================================================
+    WHY LOCALHUB
+===================================================== */
+
+.why-localhub{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+
+/* ===========================
+      Heading
+=========================== */
+
+.why-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.why-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#DBEAFE;
+
+    color:#2563eb;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+.why-title{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    margin:20px 0 15px;
+
+}
+
+.why-subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#6b7280;
+
+    line-height:1.9;
+
+}
+
+
+/* ===========================
+      Cards
+=========================== */
+
+.feature-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+
+/* ===========================
+      Icons
+=========================== */
+
+.feature-icon{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    font-size:32px;
+
+    color:#fff;
+
+    transition:.4s;
+
+}
+
+.feature-card:hover .feature-icon{
+
+    transform:rotate(-10deg) scale(1.08);
+
+}
+
+
+/* ===========================
+      Colors
+=========================== */
+
+.blue{
+
+    background:#2563eb;
+
+}
+
+.green{
+
+    background:#16a34a;
+
+}
+
+.orange{
+
+    background:#f97316;
+
+}
+
+.purple{
+
+    background:#8b5cf6;
+
+}
+
+.cyan{
+
+    background:#06b6d4;
+
+}
+
+.yellow{
+
+    background:#facc15;
+
+    color:#222;
+
+}
+
+
+/* ===========================
+      Tag
+=========================== */
+
+.feature-tag{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    background:#f3f4f6;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+      Text
+=========================== */
+
+.feature-card h4{
+
+    margin:22px 0 15px;
+
+    font-size:23px;
+
+    font-weight:700;
+
+}
+
+.feature-card p{
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+
+/* ===========================
+      Hover Glow
+=========================== */
+
+.feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(37,99,235,.04),
+
+        transparent,
+
+        rgba(22,163,74,.04)
+
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.feature-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* ===========================
+      Fade Animation
+=========================== */
+
+.feature-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===========================
+      Responsive
+=========================== */
+
+@media(max-width:991px){
+
+    .why-localhub{
+
+        padding:80px 0;
+
+    }
+
+    .why-title{
+
+        font-size:36px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .why-localhub{
+
+        padding:70px 0;
+
+    }
+
+    .why-title{
+
+        font-size:30px;
+
+    }
+
+    .feature-card{
+
+        padding:25px;
+
+    }
+
+    .feature-icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:28px;
+
+    }
+
+}
+.feature-card::after{
+
+content:"";
+
+position:absolute;
+
+bottom:0;
+
+left:0;
+
+width:0;
+
+height:4px;
+
+background:#2563eb;
+
+transition:.4s;
+
+}
+
+.feature-card:hover::after{
+
+width:100%;
+
+}

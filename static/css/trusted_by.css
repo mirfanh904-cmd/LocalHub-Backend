@@ -1,0 +1,239 @@
+/* =====================================================
+   TRUSTED BY
+===================================================== */
+
+.trusted-section{
+
+    padding:100px 0;
+
+    background:#f8fafc;
+
+}
+
+/* Header */
+
+.trusted-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.trusted-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#DBEAFE;
+
+    color:#2563eb;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+.trusted-title{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    margin:20px 0 15px;
+
+}
+
+.trusted-subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+}
+
+/* Cards */
+
+.trusted-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.trusted-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+
+}
+
+.trusted-icon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto auto 20px;
+
+    font-size:30px;
+
+    color:#fff;
+
+}
+
+.blue{
+
+    background:#2563eb;
+
+}
+
+.green{
+
+    background:#16a34a;
+
+}
+
+.purple{
+
+    background:#8b5cf6;
+
+}
+
+.orange{
+
+    background:#f97316;
+
+}
+
+.trusted-card h3{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.trusted-card p{
+
+    color:#6b7280;
+
+    margin:0;
+
+}
+
+/* Community Pills */
+
+.community-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.community-pill{
+
+    background:#fff;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+    font-weight:500;
+
+}
+
+.community-pill:hover{
+
+    transform:translateY(-4px);
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+    .trusted-title{
+
+        font-size:36px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .trusted-section{
+
+        padding:70px 0;
+
+    }
+
+    .trusted-title{
+
+        font-size:30px;
+
+    }
+
+    .trusted-card{
+
+        padding:25px;
+
+    }
+
+    .trusted-icon{
+
+        width:65px;
+
+        height:65px;
+
+        font-size:26px;
+
+    }
+
+}

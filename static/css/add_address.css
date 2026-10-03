@@ -1,0 +1,98 @@
+.address-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:45px;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.08);
+
+}
+
+.address-header{
+
+    margin-bottom:35px;
+
+}
+
+.address-header h2{
+
+    font-size:36px;
+
+    font-weight:800;
+
+}
+
+.address-header p{
+
+    color:#64748B;
+
+    margin-top:10px;
+
+}
+
+.back-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.back-link:hover{
+
+    color:#1D4ED8;
+
+}
+
+.form-label{
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.form-control,
+.form-select{
+
+    height:54px;
+
+    border-radius:14px;
+
+}
+
+textarea.form-control{
+
+    height:120px;
+
+}
+
+.btn-primary{
+
+    padding:14px 30px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+}
+
+@media(max-width:768px){
+
+    .address-card{
+
+        padding:25px;
+
+    }
+
+}

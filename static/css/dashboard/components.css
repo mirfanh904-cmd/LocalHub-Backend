@@ -1,0 +1,7 @@
+/* static/css/dashboard/components.css */
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

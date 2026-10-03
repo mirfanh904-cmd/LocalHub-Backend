@@ -1,0 +1,654 @@
+/* =====================================================
+   CUSTOMER REVIEWS
+===================================================== */
+
+.customer-reviews-section{
+
+    padding:110px 0;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fafc 100%
+    );
+
+}
+
+
+/* =====================================================
+   REVIEW STATS
+===================================================== */
+
+.review-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin:60px 0;
+
+}
+
+.review-stat-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    text-align:center;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.review-stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 60px rgba(37,99,235,.15);
+
+}
+
+.review-stat-card i{
+
+    font-size:34px;
+
+    color:#2563EB;
+
+    margin-bottom:18px;
+
+}
+
+.review-stat-card h3{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.review-stat-card span{
+
+    color:#64748B;
+
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.reviews-grid{
+
+    display:flex;
+
+    gap:28px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    padding-bottom:12px;
+
+    scrollbar-width:none;
+
+}
+
+.reviews-grid::-webkit-scrollbar
+{
+
+    display:none;
+
+}
+
+.review-card{
+
+flex:0 0 360px;
+    flex-shrink:0;
+
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.review-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:30px;
+
+    border:1px solid #E5E7EB;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.06);
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 35px 70px rgba(37,99,235,.15);
+
+}
+
+
+/* =====================================================
+   FLOATING QUOTE
+===================================================== */
+
+.review-card::before{
+
+    content:"❝";
+
+    position:absolute;
+
+    right:20px;
+
+    top:10px;
+
+    font-size:80px;
+
+    color:#DBEAFE;
+
+    font-weight:bold;
+
+    opacity:.6;
+
+}
+
+
+/* =====================================================
+   BADGES
+===================================================== */
+
+.top-reviewer{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+}
+
+.repeat-user{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+}
+
+.featured-review{
+
+    background:#EDE9FE;
+
+    color:#7C3AED;
+
+}
+
+/* =====================================================
+   USER
+===================================================== */
+
+.review-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.review-user img{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #DBEAFE;
+
+    transition:.4s;
+
+}
+
+.review-card:hover .review-user img{
+
+    transform:scale(1.08);
+
+}
+
+.review-user h5{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.review-user small{
+
+    color:#64748B;
+
+}
+
+.review-user i{
+
+    color:#2563EB;
+
+}
+
+
+/* =====================================================
+   STARS
+===================================================== */
+
+.review-stars{
+
+    color:#F59E0B;
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+}
+
+
+/* =====================================================
+   REVIEW TEXT
+===================================================== */
+
+.review-card p{
+
+    color:#475569;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:4;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+/* =====================================================
+   REVIEW FOOTER
+===================================================== */
+
+.review-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* =====================================================
+   SERVICE USED
+===================================================== */
+
+.service-used{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#ECFDF5;
+
+    color:#16A34A;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+/* =====================================================
+   VERIFIED
+===================================================== */
+
+.verified-review{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+/* =====================================================
+   HELPFUL
+===================================================== */
+
+.review-helpful{
+
+    margin-top:15px;
+
+    color:#64748B;
+
+    font-size:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+
+/* =====================================================
+   CTA BUTTON
+===================================================== */
+
+.all-reviews-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 34px;
+
+    border-radius:60px;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 20px 45px rgba(37,99,235,.25);
+
+}
+
+.all-reviews-btn:hover{
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 30px 60px rgba(37,99,235,.35);
+
+}
+
+.all-reviews-btn i{
+
+    transition:.35s;
+
+}
+
+.all-reviews-btn:hover i{
+
+    transform:translateX(8px);
+
+}
+
+
+/* =====================================================
+   HOVER EFFECTS
+===================================================== */
+
+.review-card:hover .service-used{
+
+    background:#16A34A;
+
+    color:#fff;
+
+}
+
+.review-card:hover .verified-review{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+.review-card:hover::before{
+
+    transform:scale(1.1);
+
+    opacity:1;
+
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+.review-card{
+
+    animation:reviewFade .8s ease both;
+
+}
+
+.review-card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.review-card:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes reviewFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1200px){
+
+.review-stats{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.reviews-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:992px){
+
+.review-stats{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.customer-reviews-section{
+
+padding:80px 0;
+
+}
+
+.reviews-grid{
+
+overflow-x:auto;
+}
+
+.review-card{
+
+padding:24px;
+
+}
+
+.review-card p{
+
+min-height:auto;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.review-user img{
+
+width:55px;
+
+height:55px;
+
+}
+
+.review-user h5{
+
+font-size:17px;
+
+}
+
+.review-footer{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+.review-card:hover .review-user img{
+
+    transform:scale(1.08) rotate(-3deg);
+
+}
+.review-stars{
+
+    transition:.35s;
+
+}
+
+.review-card:hover .review-stars{
+
+    transform:scale(1.08);
+
+}
+
+
+.all-reviews-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
+@media(max-width:992px){
+
+.reviews-grid{
+
+display:flex;
+
+overflow-x:auto;
+
+gap:25px;
+
+scrollbar-width:none;
+
+}
+
+.review-card{
+
+width:340px;
+
+flex-shrink:0;
+
+}
+
+}

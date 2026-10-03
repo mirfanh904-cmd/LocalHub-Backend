@@ -1,0 +1,211 @@
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.statistics-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+/* Header */
+
+.statistics-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.statistics-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#DCFCE7;
+
+    color:#16a34a;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+.statistics-title{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    margin:20px 0 15px;
+
+}
+
+.statistics-subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+}
+
+/* Cards */
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.12);
+
+}
+
+.stat-icon{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 25px;
+
+    color:#fff;
+
+    font-size:32px;
+
+}
+
+.blue{
+
+     background:#DBEAFE;
+    color:#2563eb;
+}
+
+.green{
+
+background:#DCFCE7;
+    color:#16a34a;
+
+}
+
+.purple{
+
+background:#EDE9FE;
+
+    color:#7C3AED;
+
+}
+
+.orange{
+
+background:#FFEDD5;
+
+    color:#EA580C;
+}
+
+.stat-card h3{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:#6b7280;
+
+    margin:0;
+
+    font-size:16px;
+
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+    .statistics-title{
+
+        font-size:36px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .statistics-section{
+
+        padding:70px 0;
+
+    }
+
+    .statistics-title{
+
+        font-size:30px;
+
+    }
+
+    .stat-card{
+
+        padding:30px 20px;
+
+    }
+
+    .stat-icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:28px;
+
+    }
+
+    .stat-card h3{
+
+        font-size:34px;
+
+    }
+
+}

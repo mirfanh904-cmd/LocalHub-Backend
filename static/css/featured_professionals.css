@@ -1,0 +1,842 @@
+/* =====================================================
+   FEATURED PROFESSIONALS
+===================================================== */
+
+.featured-professionals-section{
+
+    padding:110px 0;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fafc 100%
+    );
+
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.section-header{
+
+    max-width:760px;
+
+    margin:auto auto 70px;
+
+}
+
+.section-badge{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:18px;
+
+}
+
+.section-header h2{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:18px;
+
+}
+
+.section-header p{
+
+    color:#6B7280;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.professionals-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:60px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    text-align:center;
+
+    border:1px solid #E5E7EB;
+
+    transition:.35s;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.05);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(37,99,235,.12);
+
+}
+
+.stat-icon{
+
+    width:65px;
+
+    height:65px;
+
+    margin:auto;
+
+    border-radius:18px;
+
+    background:#EFF6FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.stat-icon i{
+
+    font-size:28px;
+
+    color:#2563EB;
+
+}
+
+.stat-card h3{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+    color:#111827;
+
+}
+
+.stat-card span{
+
+    color:#6B7280;
+
+}
+
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.professionals-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-bottom:60px;
+
+}
+
+.professionals-filter button{
+
+    border:none;
+
+    background:#fff;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:50px;
+
+    padding:12px 24px;
+
+    transition:.35s;
+
+    font-weight:500;
+
+}
+
+.professionals-filter button:hover{
+
+    background:#2563EB;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+.professionals-filter .active{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+
+/* =====================================================
+   SLIDER
+===================================================== */
+
+.professionals-slider{
+
+    display:flex;
+
+    gap:30px;
+
+    overflow-x:auto;
+
+    padding-bottom:15px;
+
+    scroll-behavior:smooth;
+
+}
+
+.professionals-slider::-webkit-scrollbar{
+
+    height:7px;
+
+}
+
+.professionals-slider::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:20px;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.professional-card{
+
+    min-width:360px;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid #E5E7EB;
+
+    position:relative;
+
+    transition:.45s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+}
+
+.professional-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 35px 70px rgba(37,99,235,.18);
+
+}
+
+
+/* =====================================================
+   BADGES
+===================================================== */
+
+.top-rated-badge{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    background:#F59E0B;
+
+    color:#fff;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    z-index:10;
+
+}
+
+.featured{
+
+    background:#2563EB;
+
+}
+
+.availability{
+
+    position:absolute;
+
+    right:20px;
+
+    top:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#fff;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    z-index:10;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+}
+
+.available .status-dot{
+
+    background:#22C55E;
+
+}
+
+.busy .status-dot{
+
+    background:#F59E0B;
+
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.professional-image{
+
+    height:240px;
+
+    overflow:hidden;
+
+}
+
+.professional-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.professional-card:hover .professional-image img{
+
+    transform:scale(1.08);
+
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.professional-content{
+
+    padding:28px;
+
+}
+
+.professional-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.professional-header h4{
+
+    font-size:23px;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+
+.verified{
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.speciality{
+
+    margin:15px 0;
+
+    color:#6B7280;
+
+}
+
+.rating-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+/* =====================================================
+   DETAILS
+===================================================== */
+
+.professional-details{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:14px;
+
+    margin:25px 0;
+
+}
+
+.professional-details div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:14px;
+
+    color:#475569;
+
+}
+
+.professional-details i{
+
+    color:#2563EB;
+
+}
+
+
+/* =====================================================
+   PORTFOLIO
+===================================================== */
+
+.portfolio-preview{
+
+    display:flex;
+
+    gap:12px;
+
+    margin:25px 0;
+
+}
+
+.portfolio-preview img{
+
+    width:78px;
+
+    height:78px;
+
+    border-radius:14px;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+    cursor:pointer;
+
+}
+
+.portfolio-preview img:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.20);
+
+}
+
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.price-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:25px;
+
+}
+
+.price-row small{
+
+    color:#64748B;
+
+}
+
+.price-row h5{
+
+    margin-top:5px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.view-profile-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    padding:14px 22px;
+
+    border-radius:50px;
+
+    border:2px solid #2563EB;
+
+    color:#2563EB;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.view-profile-btn:hover{
+
+    background:#2563EB;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+.view-profile-btn i{
+
+    transition:.35s;
+
+}
+
+.view-profile-btn:hover i{
+
+    transform:translateX(6px);
+
+}
+
+
+/* =====================================================
+   SEE ALL
+===================================================== */
+
+.see-all-professionals{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    padding:18px 34px;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    border-radius:60px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 20px 40px rgba(37,99,235,.25);
+
+}
+
+.see-all-professionals:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff;
+
+    box-shadow:0 30px 60px rgba(37,99,235,.35);
+
+}
+
+.see-all-professionals i{
+
+    transition:.35s;
+
+}
+
+.see-all-professionals:hover i{
+
+    transform:translateX(8px);
+
+}
+
+
+/* =====================================================
+   CARD ANIMATION
+===================================================== */
+
+.professional-card{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+.professional-card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.professional-card:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1200px){
+
+.professionals-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:992px){
+
+.section-header h2{
+
+font-size:38px;
+
+}
+
+.professional-card{
+
+min-width:330px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.featured-professionals-section{
+
+padding:80px 0;
+
+}
+
+.professionals-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.professional-details{
+
+grid-template-columns:1fr;
+
+}
+
+.professionals-filter{
+
+justify-content:flex-start;
+
+overflow-x:auto;
+
+flex-wrap:nowrap;
+
+padding-bottom:10px;
+
+}
+
+.professionals-filter::-webkit-scrollbar{
+
+display:none;
+
+}
+
+.section-header h2{
+
+font-size:32px;
+
+}
+
+.section-header p{
+
+font-size:16px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.professional-card{
+
+min-width:290px;
+
+}
+
+.professional-image{
+
+height:210px;
+
+}
+
+.price-row{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:18px;
+
+}
+
+.view-profile-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+.portfolio-preview img{
+
+width:65px;
+
+height:65px;
+
+}
+
+}

@@ -1,0 +1,724 @@
+/* =====================================================
+   HOW IT WORKS
+===================================================== */
+
+.how-it-works{
+
+    background:#f8fafc;
+
+    padding:90px 0;
+
+}
+
+
+/* ===========================
+      Heading
+=========================== */
+
+.how-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-badge{
+
+    display:inline-block;
+
+    background:#e0ecff;
+
+    color:#2563eb;
+
+    padding:8px 20px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    animation:badgePulse 3s infinite;
+
+}
+
+.section-title{
+
+    font-size:44px;
+
+    font-weight:700;
+
+    margin:20px 0 15px;
+
+}
+
+.section-subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+}
+
+
+/* ===========================
+      Workflow Card
+=========================== */
+
+.workflow-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:35px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.06);
+
+    transition:.4s;
+
+    height:100%;
+
+}
+
+.workflow-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+
+/* ===========================
+      Badge
+=========================== */
+
+.workflow-badge{
+
+    position:absolute;
+
+    top:22px;
+
+    right:22px;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.instant{
+
+    background:#DBEAFE;
+
+    color:#2563eb;
+
+}
+
+.custom{
+
+    background:#DCFCE7;
+
+    color:#16a34a;
+
+}
+
+
+/* ===========================
+      Top
+=========================== */
+
+.workflow-top{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    margin-bottom:30px;
+
+}
+
+.workflow-top h3{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.workflow-top p{
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+
+/* ===========================
+      Main Icon
+=========================== */
+
+.workflow-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:28px;
+
+    flex-shrink:0;
+
+}
+
+.book-icon{
+
+    background:#2563eb;
+
+}
+
+.task-icon{
+
+    background:#16a34a;
+
+}
+
+
+/* ===========================
+      Benefits
+=========================== */
+
+.workflow-benefits{
+
+    margin-bottom:35px;
+
+}
+
+.workflow-benefits div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
+    font-weight:500;
+
+}
+
+.workflow-benefits i{
+
+    color:#16a34a;
+
+}
+
+
+/* ===========================
+      Timeline
+=========================== */
+
+.workflow-timeline{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:0;
+
+}
+
+.step{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.step-icon{
+
+    width:62px;
+
+    height:62px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+
+.post-task .step-icon{
+
+    background:#ECFDF5;
+
+    color:#16a34a;
+
+}
+
+.step:hover .step-icon{
+
+    transform:translateY(-8px) scale(1.08);
+
+}
+
+.step h6{
+
+    margin-top:18px;
+
+    font-weight:700;
+
+}
+
+.step small{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+    line-height:1.5;
+
+}
+
+.step-line{
+
+    flex:1;
+
+    height:3px;
+
+    background:#dbeafe;
+
+    margin:30px 12px 0;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+}
+
+.post-task .step-line{
+
+    background:#bbf7d0;
+
+}
+
+.workflow-card:hover .step-line{
+
+    background:#2563eb;
+
+}
+
+.post-task:hover .step-line{
+
+    background:#16a34a;
+
+}
+/* ===========================
+      Timeline Note
+=========================== */
+
+.timeline-note{
+
+    margin-top:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    font-size:15px;
+
+}
+
+.post-task .timeline-note{
+
+    color:#16a34a;
+
+}
+
+.timeline-note i{
+
+    font-size:18px;
+
+}
+
+
+/* ===========================
+      Footer Note
+=========================== */
+
+.workflow-footer{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+
+/* ===========================
+      CTA Button
+=========================== */
+
+.workflow-btn{
+
+    width:100%;
+
+    margin-top:28px;
+
+    border-radius:50px;
+
+    padding:14px;
+
+    font-weight:600;
+
+    font-size:16px;
+
+    transition:.35s;
+
+}
+
+.workflow-btn i{
+
+    transition:.35s;
+
+}
+
+.workflow-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.workflow-btn:hover i{
+
+    transform:translateX(6px);
+
+}
+
+
+/* ===========================
+      Icon Animation
+=========================== */
+
+.workflow-card:hover .workflow-icon{
+
+    transform:rotate(-8deg) scale(1.05);
+
+    transition:.4s;
+
+}
+
+
+/* ===========================
+      Timeline Animation
+=========================== */
+
+.workflow-card:hover .step-line{
+
+    box-shadow:0 0 12px rgba(37,99,235,.35);
+
+}
+
+.post-task:hover .step-line{
+
+    box-shadow:0 0 12px rgba(22,163,74,.35);
+
+}
+
+
+/* ===========================
+      Badge Animation
+=========================== */
+
+@keyframes badgePulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ===========================
+      Card Fade Animation
+=========================== */
+
+.workflow-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media (max-width:991px){
+
+    .how-it-works{
+
+        padding:70px 0;
+
+    }
+
+    .how-header{
+
+        margin-bottom:50px;
+
+    }
+
+    .section-title{
+
+        font-size:34px;
+
+    }
+
+    .workflow-card{
+
+        padding:25px;
+
+    }
+
+    .workflow-badge{
+
+        position:static;
+
+        display:inline-block;
+
+        margin-bottom:20px;
+
+    }
+
+    .workflow-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .workflow-top h3{
+
+        font-size:24px;
+
+    }
+
+    .workflow-timeline{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:0;
+
+    }
+
+    .step{
+
+        display:flex;
+
+        align-items:center;
+
+        width:100%;
+
+        text-align:left;
+
+        gap:18px;
+
+    }
+
+    .step-icon{
+
+        margin:0;
+
+        flex-shrink:0;
+
+    }
+
+    .step-content{
+
+        flex:1;
+
+    }
+
+    .step h6{
+
+        margin:0 0 5px;
+
+    }
+
+    .step small{
+
+        margin:0;
+
+    }
+
+    .step-line{
+
+        width:3px;
+
+        height:40px;
+
+        margin:10px 0 10px 30px;
+
+    }
+
+    .timeline-note{
+
+        justify-content:flex-start;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .section-title{
+
+        font-size:28px;
+
+    }
+
+    .section-subtitle{
+
+        font-size:15px;
+
+    }
+
+    .workflow-card{
+
+        padding:20px;
+
+        border-radius:22px;
+
+    }
+
+    .workflow-icon{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:24px;
+
+    }
+
+    .step-icon{
+
+        width:54px;
+
+        height:54px;
+
+        font-size:20px;
+
+    }
+
+    .workflow-btn{
+
+        padding:13px;
+
+        font-size:15px;
+
+    }
+
+}

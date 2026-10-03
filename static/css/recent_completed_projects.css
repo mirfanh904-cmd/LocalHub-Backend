@@ -1,0 +1,718 @@
+/* =====================================================
+   RECENT COMPLETED PROJECTS
+===================================================== */
+
+.completed-projects-section{
+
+    padding:110px 0;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fafc 100%
+    );
+
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.projects-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin:60px 0;
+
+}
+
+.project-stat{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    text-align:center;
+
+    border:1px solid #E5E7EB;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.05);
+
+}
+
+.project-stat:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(37,99,235,.15);
+
+}
+
+.project-stat i{
+
+    font-size:34px;
+
+    color:#2563EB;
+
+    margin-bottom:15px;
+
+}
+
+.project-stat h3{
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.project-stat span{
+
+    color:#64748B;
+
+}
+
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.project-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:60px;
+
+}
+
+.project-filter button{
+
+    border:none;
+
+    background:#fff;
+
+    border:1px solid #E2E8F0;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    transition:.35s;
+
+    font-weight:500;
+
+}
+
+.project-filter button:hover,
+
+.project-filter .active{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.project-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    transition:.45s;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.06);
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 40px 80px rgba(37,99,235,.15);
+
+}
+
+
+/* =====================================================
+   BADGES
+===================================================== */
+
+.project-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    z-index:10;
+
+}
+
+.project-status{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    background:#22C55E;
+
+    color:#fff;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    z-index:10;
+
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.project-image{
+
+    height:260px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.7s;
+
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
+
+}
+
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.project-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(15,23,42,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.project-card:hover .project-overlay{
+
+    opacity:1;
+
+}
+
+.view-project-btn{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    border:2px solid #fff;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    transition:.35s;
+
+}
+
+.view-project-btn:hover{
+
+    background:#fff;
+
+    color:#2563EB;
+
+}
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.project-content{
+
+    padding:28px;
+
+}
+
+.category-tag{
+
+    display:inline-block;
+
+    padding:7px 14px;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:16px;
+
+}
+
+.project-content h4{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+    color:#111827;
+
+}
+
+.project-content p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+/* =====================================================
+   META
+===================================================== */
+
+.project-meta{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:22px;
+
+    color:#64748B;
+
+    font-size:14px;
+
+}
+
+.project-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.project-meta i{
+
+    color:#2563EB;
+
+}
+
+
+/* =====================================================
+   PROFESSIONAL
+===================================================== */
+
+.professional-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:22px;
+
+}
+
+.professional-row img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #DBEAFE;
+
+}
+
+.professional-row h6{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+}
+
+.professional-row small{
+
+    color:#2563EB;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.project-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+.project-footer h5{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#22C55E;
+
+}
+
+.project-footer small{
+
+    color:#64748B;
+
+}
+
+
+/* =====================================================
+   REVIEW
+===================================================== */
+
+.customer-review{
+
+    background:#F8FAFC;
+
+    border-left:4px solid #2563EB;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    font-style:italic;
+
+    color:#475569;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.all-projects-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    padding:18px 36px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    margin-top:20px;
+
+    box-shadow:0 20px 40px rgba(37,99,235,.25);
+
+}
+
+.all-projects-btn:hover{
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 30px 60px rgba(37,99,235,.35);
+
+}
+
+.all-projects-btn i{
+
+    transition:.35s;
+
+}
+
+.all-projects-btn:hover i{
+
+    transform:translateX(8px);
+
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+.project-card{
+
+    animation:fadeProject .8s ease both;
+
+}
+
+.project-card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.project-card:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes fadeProject{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1200px){
+
+.projects-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.projects-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.completed-projects-section{
+
+padding:80px 0;
+
+}
+
+.projects-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.projects-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.project-filter{
+
+justify-content:flex-start;
+
+overflow-x:auto;
+
+flex-wrap:nowrap;
+
+padding-bottom:12px;
+
+}
+
+.project-filter::-webkit-scrollbar{
+
+display:none;
+
+}
+
+.project-meta{
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.project-image{
+
+height:220px;
+
+}
+
+.project-content{
+
+padding:22px;
+
+}
+
+.project-content h4{
+
+font-size:21px;
+
+}
+
+.professional-row img{
+
+width:50px;
+
+height:50px;
+
+}
+
+.project-footer{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:10px;
+
+}
+
+.all-projects-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}

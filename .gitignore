@@ -1,0 +1,36 @@
+# Python / Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django & Database
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+scratch/
+rendered_checkout.html
+
+# Environment variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Node / Frontend assets inside backend if any
+node_modules/
+npm-debug.log*
+
+# Logs
+*.log
+logs/
+
+# IDE / Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store

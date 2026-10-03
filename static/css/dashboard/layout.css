@@ -1,0 +1,124 @@
+/* static/css/dashboard/layout.css */
+:root {
+  --sidebar-width: 280px;
+  --transition-speed: 0.3s;
+  --layout-bg: #f8fafc;
+}
+
+body {
+  margin: 0;
+  background-color: var(--layout-bg);
+}
+
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--layout-bg);
+  position: relative;
+}
+
+.dashboard-sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid #e2e8f0;
+  transition: transform var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1), margin var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Collapsed state for Desktop - completely hides sidebar */
+@media (min-width: 992px) {
+  .dashboard-layout.collapsed .dashboard-sidebar {
+    margin-left: calc(-1 * var(--sidebar-width));
+  }
+}
+
+.dashboard-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 0; /* Important to prevent flex items from overflowing */
+  overflow: hidden;
+  position: relative;
+}
+
+.dashboard-header-bar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  flex-shrink: 0;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  color: #475569;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-toggle:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0 35px 35px;
+}
+
+/* Mobile Behavior (<992px) */
+@media (max-width: 991px) {
+  .dashboard-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    margin-left: 0 !important;
+  }
+  
+  .dashboard-layout.mobile-open .dashboard-sidebar {
+    transform: translateX(0);
+  }
+  
+  .dashboard-content {
+    padding: 0 20px 20px;
+  }
+  
+  .dashboard-header-bar {
+    padding: 0 15px;
+  }
+}
+
+/* Sidebar overlay for mobile drawer */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 90;
+  opacity: 0;
+  transition: opacity var(--transition-speed);
+}
+
+.dashboard-layout.mobile-open .sidebar-overlay {
+  display: block;
+  opacity: 1;
+}
